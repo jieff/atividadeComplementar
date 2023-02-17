@@ -1,0 +1,25 @@
+unit UFuncionario;
+
+interface
+
+type
+  TFuncionario = class
+    private
+
+      FNome : String;
+      FSobrenome: string;
+      FSalarioMensal: Double;
+
+    public
+
+    constructor Create(const aNome, aSobrenome: String; aSalarioMensal: Double);
+    property Nome: String read FNome write FNome;
+    property Sobrenome: String read FSobrenome write FSobrenome;
+    property SalarioMensal: Double read FSalarioMensal write FSalarioMensal;
+
+
+  end;
+
+implementation
+
+end.

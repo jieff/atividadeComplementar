@@ -1,0 +1,15 @@
+program Complementar;
+
+uses
+  Vcl.Forms,
+  UnitMain in '..\16-02\UnitMain.pas' {Form1},
+  UFuncionario in 'UFuncionario.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TFuncionario, Funcionario);
+  Application.Run;
+end.

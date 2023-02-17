@@ -1,0 +1,43 @@
+unit UPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, UFuncionario;
+
+type
+  TForm1 = class(TForm)
+    edtNome: TEdit;
+    edtSobrenome: TEdit;
+    edtSalarioMensal: TEdit;
+    mem: TMemo;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    btnDados: TButton;
+    procedure btnDadosClick(Sender: TObject);
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+
+
+procedure TForm1.btnDadosClick(Sender: TObject);
+var
+    xFuncionario1, xFuncionario2 : TFuncionario;
+begin
+
+end;
+
+end.
